@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Vitr'Alex - Laveur de Vitres Professionnel Grenoble | Nettoyage Locaux Isère</title>
+    <meta name="description" content="Vitr'Alex, laveur de vitres professionnel à Grenoble. Nettoyage de locaux particuliers & professionnels en Isère. Devis gratuit ☎ 06.29.97.15.93">
+    <meta name="keywords" content="laveur vitres Grenoble, nettoyage locaux Isère, vitr'alex, lavage vitres professionnel, nettoyage bureaux Grenoble, vitrier Grenoble, nettoyage résidentiel Isère">
+    
+    <!-- Schema.org markup pour le SEO local -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Vitr'Alex",
+        "description": "Laveur de vitres professionnel et nettoyage de locaux à Grenoble et dans l'Isère",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Grenoble",
+            "addressRegion": "Isère"
+        },
+        "telephone": "+33629971593",
+        "email": "vitralex.laissus@outlook.fr",
+        "serviceArea": "Grenoble et agglomération"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #6BA8C5;
+            --secondary-color: #F2F2F2;
+            --text-dark: #252525;
+            --text-light: #666;
+            --white: #ffffff;
+            --gradient: linear-gradient(135deg, #6BA8C5 0%, #4A90A4 100%);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+        
+        /* Header */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+        
+        .logo-image {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-menu a:hover {
+            color: var(--primary-color);
+        }
+        
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        
+        .nav-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--text-dark);
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: var(--gradient);
+            color: var(--white);
+            text-align: center;
+            padding: 150px 5% 100px;
+            margin-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .phone-hero {
+            display: inline-block;
+            background: var(--white);
+            color: var(--primary-color);
+            padding: 15px 25px;
+            margin: 0 10px 20px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .phone-hero:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--white);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            margin: 0 10px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
+        /* Zone d'intervention */
+        .coverage-area {
+            background: var(--secondary-color);
+            padding: 40px 5%;
+            text-align: center;
+        }
+        
+        .coverage-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .coverage-title {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .coverage-cities {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .city-tag {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        /* Sections génériques */
+        .section {
+            padding: 80px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--text-dark);
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: var(--primary-color);
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+        
+        /* Services */
+        .services-intro {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 1.2rem;
+            color: var(--text-light);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .service-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid var(--secondary-color);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .service-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .service-keywords {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-areas {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-style: italic;
+        }
+        
+        /* À propos */
+        .about {
+            background: var(--secondary-color);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-text h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .about-text p {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .contact-info-about {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+        
+        .contact-info-about h4 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .about-image {
+            text-align: center;
+            font-size: 8rem;
+            color: var(--primary-color);
+            opacity: 0.8;
+        }
+        
+        /* Avantages */
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .advantage-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 2rem;
+            background: var(--white);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .advantage-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .advantage-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            min-width: 60px;
+        }
+        
+        .advantage-text h4 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+        
+        .advantage-text p {
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+        
+        /* Témoignages */
+        .testimonials {
+            background: var(--gradient);
+            color: var(--white);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .testimonial-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            text-align: right;
+        }
+        
+        /* Contact */
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+        
+        .contact-form {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .contact-form h3 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: var(--text-dark);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid var(--secondary-color);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: var(--gradient);
+            color: var(--white);
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .contact-info h3 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--text-dark);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background: var(--secondary-color);
+            border-radius: 10px;
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            min-width: 30px;
+        }
+        
+        .contact-text {
+            color: var(--text-dark);
+            font-size: 1.1rem;
+        }
+        
+        .contact-text strong {
+            color: var(--primary-color);
+        }
+        
+        .phone-button {
+            display: inline-block;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 18px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .phone-button:hover {
+            background: #4A90A4;
+            transform: translateY(-2px);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 3rem 5% 2rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h4 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section p,
+        .footer-section li {
+            margin-bottom: 0.8rem;
+            line-height: 1.6;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: var(--primary-color);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #444;
+            padding-top: 1.5rem;
+            text-align: center;
+        }
+
+        
+        .developer-credit {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #333;
+        }
+        
+        .developer-credit p {
+            font-size: 0.9rem;
+            color: #888;
+            margin: 0;
+        }
+        
+        .developer-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .developer-link:hover {
+            color: #4A90A4;
+            text-decoration: underline;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 80px;
+                flex-direction: column;
+                background-color: var(--white);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+                padding: 2rem 0;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .nav-toggle {
+                display: flex;
+            }
+            
+            .logo-text {
+                font-size: 1.5rem;
+            }
+            
+            .logo-image {
+                width: 40px;
+                height: 40px;
+                font-size: 10px;
+            }
+            
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .phone-hero,
+            .cta-button {
+                display: block;
+                margin: 10px auto;
+                width: fit-content;
+            }
+            
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .advantages-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .coverage-cities {
+                justify-content: center;
+            }
+            
+            .phone-button {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 1000;
+                border-radius: 50px;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+        
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#accueil" class="logo-container">
+                <img src="/img/Vitr'Alex_logo.png" alt="Logo Vitr'Alex laveur de vitre et nettoyage de locaux et commerces" class="logo-image">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Vitr'Alex</h1>
+            <h2 class="hero-subtitle">Laveur de Vitres Professionnel & Particulier</h2>
+            <p>Votre expert en <strong>lavage de vitres</strong> et <strong>nettoyage de locaux</strong> à <strong>Grenoble</strong><br>
+            Service professionnel pour particuliers et entreprises en Isère</p>
+            <a href="tel:+33629971593" class="phone-hero">📞 06.29.97.15.93</a>
+            <a href="#contact" class="cta-button">Devis gratuit</a>
+        </div>
+    </section>
+
+    <!-- Zone d'intervention -->
+    <section class="coverage-area">
+        <div class="coverage-content fade-in">
+            <h2 class="coverage-title">Zone d'intervention : Grenoble et agglomération</h2>
+            <p>Vitr'Alex intervient dans toute l'Isère pour vos besoins en lavage de vitres et nettoyage de locaux</p>
+            <div class="coverage-cities">
+                <span class="city-tag">Grenoble</span>
+                <span class="city-tag">Meylan</span>
+                <span class="city-tag">Échirolles</span>
+                <span class="city-tag">Saint-Martin-d'Hères</span>
+                <span class="city-tag">Fontaine</span>
+                <span class="city-tag">Seyssinet-Pariset</span>
+                <span class="city-tag">Seyssins</span>
+                <span class="city-tag">Sassenage</span>
+                <span class="city-tag">Saint-Égrève</span>
+                <span class="city-tag">Isère (38)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+        <h2 class="section-title fade-in">Nos Services de Nettoyage Professionnel</h2>
+        <div class="services-intro fade-in">
+            <p>Vitr'Alex propose des services de <strong>lavage de vitres professionnel</strong> et de <strong>nettoyage de locaux</strong> adaptés aux particuliers et aux professionnels à Grenoble et dans toute l'Isère.</p>
+        </div>
+        <div class="services-grid">
+            <article class="service-card fade-in">
+                <div class="service-icon">🪟</div>
+                <h3>Lavage de Vitres Grenoble</h3>
+                <div class="service-keywords">Lavage vitres • Nettoyage baies vitrées • Vitres résidentielles</div>
+                <p>Service professionnel de <strong>lavage de vitres à Grenoble</strong> pour particuliers. Nettoyage intérieur et extérieur de vos fenêtres, baies vitrées et verrières. Résultat impeccable garanti avec du matériel professionnel.</p>
+                <div class="service-areas">Intervention : Maisons, appartements, copropriétés • Grenoble et agglomération</div>
+            </article>
+            
+            <article class="service-card fade-in">
+                <div class="service-icon">🏢</div>
+                <h3>Nettoyage Locaux Professionnels</h3>
+                <div class="service-keywords">Bureaux • Commerces • Entreprises • Isère</div>
+                <p><strong>Nettoyage de locaux professionnels en Isère</strong> : bureaux, commerces, cabinets médicaux, entreprises. Entretien régulier ou ponctuel adapté à vos besoins avec contrats sur mesure.</p>
+                <div class="service-areas">Secteurs : Tertiaire, médical, commercial • Toute l'Isère</div>
+            </article>
+            
+            <article class="service-card fade-in">
+                <div class="service-icon">✨</div>
+                <h3>Nettoyage Complet Résidentiel</h3>
+                <div class="service-keywords">Ménage • Entretien • Particuliers • Grenoble</div>
+                <p>Services de <strong>nettoyage résidentiel à Grenoble</strong> : ménage complet, entretien régulier, nettoyage de fin de bail. Solutions personnalisées pour particuliers avec produits écologiques.</p>
+                <div class="service-areas">Services : Ménage, détartrage, désinfection • Particuliers Grenoble</div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Avantages -->
+    <section class="section">
+        <h2 class="section-title fade-in">Pourquoi choisir Vitr'Alex ?</h2>
+        <div class="advantages-grid">
+            <div class="advantage-item fade-in">
+                <div class="advantage-icon">⚡</div>
+                <div class="advantage-text">
+                    <h4>Intervention Rapide</h4>
+                    <p>Devis gratuit sous 24h, intervention sous 48h dans toute l'agglomération grenobloise</p>
+                </div>
+            </div>
+            <div class="advantage-item fade-in">
+                <div class="advantage-icon">✅</div>
+                <div class="advantage-text">
+                    <h4>Expertise Professionnelle</h4>
+                    <p>Matériel professionnel et techniques éprouvées pour un lavage de vitres impeccable</p>
+                </div>
+            </div>
+            <div class="advantage-item fade-in">
+                <div class="advantage-icon">💰</div>
+                <div class="advantage-text">
+                    <h4>Tarifs Compétitifs</h4>
+                    <p>Devis gratuit et tarifs transparents pour tous nos services de nettoyage</p>
+                </div>
+            </div>
+            <div class="advantage-item fade-in">
+                <div class="advantage-icon">🌿</div>
+                <div class="advantage-text">
+                    <h4>Produits Éco-responsables</h4>
+                    <p>Utilisation de produits respectueux de l'environnement et de votre santé</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="about" class="section about">
+        <h2 class="section-title fade-in">À propos de Vitr'Alex</h2>
+        <div class="about-content">
+            <div class="about-text fade-in">
+                <h3>Votre expert nettoyage à Grenoble</h3>
+                <p>Vitr'Alex est votre <strong>spécialiste en lavage de vitres et nettoyage de locaux à Grenoble</strong>. Fort d'une expérience solide dans le secteur du nettoyage professionnel, nous nous sommes spécialisés dans des services de qualité pour particuliers et professionnels.</p>
+                <p>Basé à <strong>Grenoble en Isère</strong>, nous intervenons dans toute l'agglomération grenobloise avec un seul objectif : vous offrir un service irréprochable qui dépasse vos attentes en matière de propreté.</p>
+                
+                <div class="contact-info-about">
+                    <h4>Coordonnées Vitr'Alex</h4>
+                    <div class="contact-detail">
+                        <span>📧</span>
+                        <strong>vitralex.laissus@outlook.fr</strong>
+                    </div>
+                    <div class="contact-detail">
+                        <span>📱</span>
+                        <strong>06.29.97.15.93</strong>
+                    </div>
+                    <div class="contact-detail">
+                        <span>📍</span>
+                        <span>Grenoble et agglomération, Isère (38)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image fade-in">
+                🧽
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section class="section testimonials">
+        <h2 class="section-title fade-in">Témoignages clients</h2>
+        <div class="testimonials-grid">
+            <article class="testimonial-card fade-in">
+                <p class="testimonial-text">"Excellent service de lavage de vitres ! Vitr'Alex est très professionnel, mes vitres n'ont jamais été aussi propres. Je recommande vivement pour Grenoble."</p>
+                <p class="testimonial-author">- Marie D., Particulier Grenoble</p>
+            </article>
+            <article class="testimonial-card fade-in">
+                <p class="testimonial-text">"Prestataire fiable pour le nettoyage de nos bureaux. Ponctuel, efficace et tarifs corrects. Notre entreprise fait désormais appel à Vitr'Alex régulièrement."</p>
+                <p class="testimonial-author">- Jean-Luc M., Dirigeant entreprise Meylan</p>
+            </article>
+            <article class="testimonial-card fade-in">
+                <p class="testimonial-text">"Service de nettoyage de locaux impeccable ! Qualité professionnelle et respect des délais. Vitr'Alex est notre partenaire nettoyage de confiance en Isère."</p>
+                <p class="testimonial-author">- Sandra L., Responsable facilities Échirolles</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h2 class="section-title fade-in">Contactez Vitr'Alex - Devis gratuit</h2>
+        <div class="contact-content">
+            <div class="contact-form fade-in">
+                <h3>Demande de devis gratuit</h3>
+                <form onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="nom">Nom / Entreprise *</label>
+                        <input type="text" id="nom" name="nom" required placeholder="Votre nom ou raison sociale">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="votre@email.fr">
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="telephone" placeholder="06.XX.XX.XX.XX">
+                    </div>
+                    <div class="form-group">
+                        <label for="ville">Ville d'intervention</label>
+                        <input type="text" id="ville" name="ville" placeholder="Grenoble, Meylan, Échirolles...">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service souhaité</label>
+                        <select id="service" name="service">
+                            <option value="">Sélectionnez un service</option>
+                            <option value="lavage-vitres-particulier">Lavage de vitres particulier</option>
+                            <option value="lavage-vitres-professionnel">Lavage de vitres professionnel</option>
+                            <option value="nettoyage-locaux-bureaux">Nettoyage de bureaux</option>
+                            <option value="nettoyage-locaux-commerces">Nettoyage de commerces</option>
+                            <option value="nettoyage-residentiel">Nettoyage résidentiel</option>
+                            <option value="contrat-entretien">Contrat d'entretien régulier</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Détails de votre demande *</label>
+                        <textarea id="message" name="message" placeholder="Décrivez vos besoins : surface, fréquence, spécificités..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Demander un devis gratuit</button>
+                </form>
+            </div>
+            <div class="contact-info fade-in">
+                <h3>Informations de contact</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-text">
+                        <strong>Email professionnel :</strong><br>
+                        vitralex.laissus@outlook.fr
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-text">
+                        <strong>Téléphone direct :</strong><br>
+                        06.29.97.15.93
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-text">
+                        <strong>Zone d'intervention :</strong><br>
+                        Grenoble et agglomération<br>
+                        Isère (38)
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🕒</div>
+                    <div class="contact-text">
+                        <strong>Horaires :</strong><br>
+                        Lun-Ven : 7h-19h<br>
+                        Samedi : 9h-19h
+                    </div>
+                </div>
+                <a href="tel:+33629971593" class="phone-button">📞 Appeler maintenant</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Vitr'Alex Grenoble</h4>
+                    <p><strong>Laveur de vitres professionnel</strong></p>
+                    <p><strong>Nettoyage de locaux Isère</strong></p>
+                    <p>Service de qualité pour particuliers et professionnels à Grenoble et dans toute l'agglomération.</p>
+                    <p><strong>📧</strong> vitralex.laissus@outlook.fr</p>
+                    <p><strong>📱</strong> 06.29.97.15.93</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Nos Services</h4>
+                    <ul>
+                        <li><a href="#services">Lavage de vitres Grenoble</a></li>
+                        <li><a href="#services">Nettoyage locaux professionnels</a></li>
+                        <li><a href="#services">Nettoyage résidentiel</a></li>
+                        <li><a href="#services">Entretien bureaux Isère</a></li>
+                        <li><a href="#services">Nettoyage commerces</a></li>
+                        <li><a href="#contact">Devis gratuit</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Zone d'intervention</h4>
+                    <ul>
+                        <li>Grenoble centre et quartiers</li>
+                        <li>Meylan, Échirolles, Fontaine</li>
+                        <li>Saint-Martin-d'Hères</li>
+                        <li>Seyssinet-Pariset, Seyssins</li>
+                        <li>Sassenage, Saint-Égrève</li>
+                        <li>Toute l'agglomération grenobloise</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="#mentions">Mentions légales</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li>Auto-entrepreneur déclaré</li>
+                        <li>Assurance professionnelle</li>
+                        <li>Devis gratuit sous 24h</li>
+                        <li>Intervention rapide</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="developer-credit">
+                    <p>Site web créé par <a href="mailto:rocheslaurent.professionnelle@gmail.com" class="developer-link">ROCHES Laurent</a> - Création de sites web professionnels</p>
+                </div>
+                <p>&copy; 2025 Vitr'Alex - Laveur de vitres professionnel Grenoble | Nettoyage locaux Isère | Tous droits réservés</p>
+                <p>Expert en lavage de vitres et nettoyage de locaux • Particuliers et professionnels • Grenoble et agglomération</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation mobile
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (navToggle && navMenu) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+
+            // Fermer le menu mobile lors du clic sur un lien
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                });
+            });
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animation au scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header au scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (header) {
+                if (window.scrollY > 100) {
+                    header.style.background = 'rgba(255, 255, 255, 0.95)';
+                    header.style.backdropFilter = 'blur(10px)';
+                } else {
+                    header.style.background = 'var(--white)';
+                    header.style.backdropFilter = 'none';
+                }
+            }
+        });
+
+          // Gestion du formulaire avec mailto
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Récupération des données du formulaire
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // Construction du mail
+            const subject = `Demande de devis - ${data.nom}`;
+            const body = `
+                Nouvelle demande de devis de ${data.nom}
+
+                Email: ${data.email}
+                Téléphone: ${data.telephone || 'Non renseigné'}
+                Ville: ${data.ville || 'Non renseignée'}
+                Service: ${data.service || 'Non spécifié'}
+
+                Message:
+                    ${data.message}
+                `.trim();
+            
+            // Ouverture du client mail
+            const mailtoLink = `mailto:vitralexgrenoble@outlook.fr?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailtoLink;
+            
+            // Message de confirmation
+            setTimeout(() => {
+                alert('Votre client mail va s\'ouvrir avec le message pré-rempli. Envoyez-le pour transmettre votre demande à Vitr\'Alex.');
+            }, 500);
+        }
+
+        // Animation du logo
+        const logoContainer = document.querySelector('.logo-container');
+        if (logoContainer) {
+            logoContainer.addEventListener('mouseover', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+
+            logoContainer.addEventListener('mouseout', function() {
+                this.style.transform = 'scale(1)';
+            });
+        }
+
+        // Amélioration UX pour les boutons d'appel
+        document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+            link.addEventListener('click', function() {
+                console.log('Clic sur le numéro de téléphone');
+            });
+        });
+    </script>
+</body>
+</html>
