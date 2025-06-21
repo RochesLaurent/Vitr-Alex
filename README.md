@@ -53,6 +53,7 @@ Vitr-Alex/
 ├── README.md
 ├── LICENSE
 ├── main.html              # Page principale
+├── merci.html             # Page de remerciement
 ├── img/
     └── Vitr'Alex_logo.png # Logo de l'entreprise
 ```
