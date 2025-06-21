@@ -54,9 +54,7 @@ Vitr-Alex/
 ├── LICENSE
 ├── main.html              # Page principale
 ├── img/
-│   └── Vitr'Alex_logo.png # Logo de l'entreprise
-└── docs/
-    └── prompt_racine.md   # Spécifications du projet
+    └── Vitr'Alex_logo.png # Logo de l'entreprise
 ```
 
 ## 🚀 Installation et utilisation
