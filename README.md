@@ -92,7 +92,7 @@ npx http-server
 
 **Vitr'Alex**
 - **Téléphone :** 06.29.97.15.93
-- **Email :** vitralexgrenoble@outlook.fr
+- **Email :** vitralex.laissus@outlook.fr
 - **Zone :** Grenoble et agglomération, Isère (38)
 - **Services :** Lavage vitres, nettoyage locaux
 
@@ -105,7 +105,7 @@ Dans `main.html`, rechercher et modifier :
 href="tel:+33629971593"
 
 // Email
-vitralexgrenoble@outlook.fr
+vitralex.laissus@outlook.fr
 ```
 
 ### Changer les couleurs
@@ -183,8 +183,8 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 ## 👨‍💻 Développeur
 
-**Site créé par :** [Votre Nom]
-**Contact :** [votre@email.fr]
+**Site créé par :** ROCHES Laurent
+**Contact :** rocheslaurent.professionnelle@gmail.com
 **Spécialité :** Création de sites vitrine pour auto-entrepreneurs
 
 ---
