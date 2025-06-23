@@ -853,6 +853,20 @@
                 font-size: 1.5rem;
             }
             
+            /* Masquer le texte sur mobile, garder seulement l'icône */
+            .phone-button {
+                overflow: hidden;
+                text-indent: -9999px;
+            }
+            
+            .phone-button::before {
+                content: '📞';
+                position: absolute;
+                text-indent: 0;
+                font-size: 1.5rem;
+            }
+            
+            /* Ajouter du padding-bottom aux sections pour éviter que le bouton cache le contenu */
             .contact-content {
                 padding-bottom: 100px;
             }
